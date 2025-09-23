@@ -10,12 +10,13 @@ body {
     max-width: 800px;
     margin: auto;
 }
+
 h1 {
     font-family: monospace;
     color: black;
     font-size: 10rem;
-    line-height: 90%;
     letter-spacing: 0.0 em;
+    line-height: 80%;
     background-color:#95D3E0;
     text-align: center;
     text-box: trim-both cap alphabetic;
@@ -25,8 +26,8 @@ h2 {
     font-family: monospace;
     color: black;
     font-size: 6rem;
-    line-height: 90%;
-    letter-spacing: 0.0 em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     background-color:#FCCBCF;
     text-align: center;
     text-box: trim-both cap alphabetic;
@@ -37,10 +38,19 @@ h3 {
     color: black;
     font-size: 1.5rem;
     text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 h4 {
+    font-family: monospace;
+    background-color:#87B8C9;
+    color: black;
+    font-size: 1.5rem;
     text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    text-box: trim-both cap alphabetic;
 }
 
 blockquote {
@@ -48,10 +58,19 @@ blockquote {
     line-height: 1.5;
     font-style: italic;
     max-width: 600px;
+    margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
     background-color: #FFDAC8;
-    text-box: trim-both cap alphabetic;
+}
+
+em {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.author {
+    margin-bottom: 40px;
 }
 
 .left-align {
@@ -65,6 +84,7 @@ blockquote {
 .code {
     color: #95D3E0;
     opacity: 50%;
+    line-height: 10px;
 }
 
 .special-font {
@@ -85,16 +105,21 @@ p {
     text-align: center;
     line-height: 2;
     letter-spacing: 0.1 em;
+    margin-bottom: 3%;
 }
 
 .orange-text {
     color: #DE8152;
     font-weight: bold;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .green-text {
     color: #53BF87;
     font-weight: bold;
+    margin: 1rem;
+    line-height: 20px;
     font-size: 1rem;
 }
 
@@ -102,6 +127,7 @@ p {
     background-color: #A6E8C6;
     text-align: center;
     font-size: 6rem;
+    margin-top: 5rem;
 }
 
-*:not(:first-child) { margin-block-start: 1em; }
+/*:not(:first-child) { margin-block-start: 1em; }
