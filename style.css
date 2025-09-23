@@ -11,9 +11,49 @@ h1 {
     color: black;
     font-size: 12rem;
     line-height: 90%;
-    letter-spacing: 1em;
+    letter-spacing: 0.0 em;
     padding: 10px;
     background-color:#95D3E0;
+    text-align: center;
+}
+
+h2 {
+    font-family: monospace;
+    color: black;
+    font-size: 8rem;
+    line-height: 90%;
+    letter-spacing: 0.0 em;
+    padding: 10px;
+    background-color:#FCCBCF;
+    text-align: center;
+}
+
+h3 {
+    font-family: monospace;
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+blockquote {
+    text-align: center;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.code {
+    color: #95D3E0;
+    opacity: 50%;
 }
 
 .special-font {
@@ -23,11 +63,21 @@ h1 {
 .wild-font {
     color: black;
     font-family: neonderthaw;
-    letter-spacing: 0.0em;
+    letter-spacing: 1rem;
 }
 .bigfont { 
     color: black;
     font-size: 2rem;
+}
+
+p {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.green-background {
+    background-color: #A6E8C6;
+    text-align: center;
 }
 
 *:not(:first-child) { margin-block-start: 1em; }
