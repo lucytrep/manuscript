@@ -7,35 +7,35 @@ body {
 }
 
 .container {
-    max-width: 960px;
+    max-width: 800px;
     margin: auto;
 }
 h1 {
     font-family: monospace;
     color: black;
-    font-size: 12rem;
+    font-size: 10rem;
     line-height: 90%;
     letter-spacing: 0.0 em;
-    padding: 10px;
     background-color:#95D3E0;
     text-align: center;
+    text-box: trim-both cap alphabetic;
 }
 
 h2 {
     font-family: monospace;
     color: black;
-    font-size: 8rem;
+    font-size: 6rem;
     line-height: 90%;
     letter-spacing: 0.0 em;
-    padding: 10px;
     background-color:#FCCBCF;
     text-align: center;
+    text-box: trim-both cap alphabetic;
 }
 
 h3 {
     font-family: monospace;
     color: black;
-    font-size: 3rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -46,19 +46,20 @@ h4 {
 blockquote {
     text-align: center;
     line-height: 1.5;
-    font-weight: bold;
     font-style: italic;
-    max-width: 800px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #FFDAC8;
+    text-box: trim-both cap alphabetic;
 }
 
 .left-align {
-    text-align: left;
+    float: left;
 }
 
 .right-align {
-    text-align: right;
+    float: right;
 }
 
 .code {
@@ -86,9 +87,21 @@ p {
     letter-spacing: 0.1 em;
 }
 
+.orange-text {
+    color: #DE8152;
+    font-weight: bold;
+}
+
+.green-text {
+    color: #53BF87;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
 .green-background {
     background-color: #A6E8C6;
     text-align: center;
+    font-size: 6rem;
 }
 
 *:not(:first-child) { margin-block-start: 1em; }
