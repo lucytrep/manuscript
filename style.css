@@ -1,19 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Neonderthaw&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body { 
     font-family: monospace;
-    color: red;
+    color: black;
     padding: 3rem;
 }
 
 h1 {
-    font-family: Inter;
-    color: pink;
-    font-size: 4rem;
+    font-family: monospace;
+    color: black;
+    font-size: 12rem;
+    line-height: 90%;
+    letter-spacing: 1em;
+    padding: 10px;
+    background-color:#95D3E0;
 }
 
-.bigorange { 
-    color: orange;
+.special-font {
+    font-family: neonderthaw;
+}
+
+.wild-font {
+    color: black;
+    font-family: neonderthaw;
+    letter-spacing: 0.0em;
+}
+.bigfont { 
+    color: black;
     font-size: 2rem;
 }
 
