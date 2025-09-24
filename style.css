@@ -1,19 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Neonderthaw&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Neonderthaw&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 body { 
-    font-family: monospace;
-    font-size: 1rem;
+    font-family: cousine;
+    font-size: 1.1rem;
     color: black;
     padding: 3rem;
+    text-wrap: pretty;
 }
 
 .container {
-    max-width: 800px;
     margin: auto;
+    max-width: 960px;
+}
+
+p {
+    text-align: center;
+    line-height: 2;
+    letter-spacing: 0.1 em;
+    margin-bottom: 3%;
 }
 
 h1 {
-    font-family: monospace;
+    font-family: cousine;
     color: black;
     font-size: 12rem;
     letter-spacing: 0.0 em;
@@ -26,7 +36,7 @@ h1 {
 }
 
 h2 {
-    font-family: monospace;
+    font-family: cousine;
     color: black;
     font-size: 6rem;
     margin-top: 1rem;
@@ -37,26 +47,33 @@ h2 {
 }
 
 h3 {
-    font-family: monospace;
+    font-family: cousine;
     color: black;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 1rem;
+    text-wrap: pretty;
+}
+
+.smaller-subheading {
+    font-size: 1.7rem;
 }
 
 h4 {
-    font-family: monospace;
+    font-family: cousine;
     background-color:#95D3E0;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 1.5rem;
     text-box: trim-both cap alphabetic;
+    text-wrap: pretty;
 }
 
 blockquote {
+    font-family: cousine;
     text-align: center;
     line-height: 1.5;
     font-style: italic;
@@ -65,6 +82,7 @@ blockquote {
     margin-left: auto;
     margin-right: auto;
     background-color: #FFDAC8;
+    text-wrap: pretty;
 }
 
 em {
@@ -85,6 +103,7 @@ em {
 }
 
 .code {
+    font-family: monospace;
     color: #95D3E0;
     opacity: 50%;
     line-height: 10px;
@@ -99,16 +118,10 @@ em {
     font-family: neonderthaw;
     letter-spacing: 1rem;
 }
+
 .bigfont { 
     color: black;
     font-size: 2rem;
-}
-
-p {
-    text-align: center;
-    line-height: 2;
-    letter-spacing: 0.1 em;
-    margin-bottom: 3%;
 }
 
 .orange-text {
@@ -137,4 +150,11 @@ p {
     margin-top: 5rem;
 }
 
+.pink {
+    color: #DE8152;
+}
+
+footer {
+    text-align: center;
+}
 /*:not(:first-child) { margin-block-start: 1em; }
