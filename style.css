@@ -8,9 +8,6 @@ body {
     color: black;
     padding: 3rem;
     text-wrap: pretty;
-}
-
-.container {
     margin: auto;
     max-inline-size: 90ch;
 }
@@ -25,7 +22,7 @@ p {
 h1 {
     font-family: cousine;
     color: black;
-    font-size: 12rem;
+    font-size: 9rem;
     letter-spacing: 0.0 em;
     line-height: 80%;
     padding-left: 0;
@@ -51,13 +48,25 @@ h3 {
     color: black;
     font-size: 1.9rem;
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-bottom: 1rem;
     text-wrap: pretty;
 }
 
-.smaller-subheading {
-    font-size: 1.7rem;
+h3.em {
+    font-size: 1.6rem;
+}
+
+h3.em::before {
+    content: "<em>";
+    color: #95D3E0;
+    opacity: 50%;
+}
+
+h3.em::after {
+    content: "</em>";
+    color: #95D3E0;
+    opacity: 50%;
 }
 
 h4 {
@@ -94,19 +103,22 @@ em {
     margin-bottom: 40px;
 }
 
-.left-align {
-    float: left;
-}
-
 .right-align {
     float: right;
 }
 
-.code {
+code {
     font-family: monospace;
     color: #95D3E0;
     opacity: 50%;
-    line-height: 10px;
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.basic {
+    font-family: monospace;
+    color: black;
 }
 
 .special-font {
