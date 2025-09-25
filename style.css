@@ -12,7 +12,7 @@ body {
 
 .container {
     margin: auto;
-    max-width: 960px;
+    max-inline-size: 90ch;
 }
 
 p {
