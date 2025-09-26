@@ -8,7 +8,7 @@ html {
 
 body { 
     font-family: cousine;
-    font-size: 1.1rem;
+    font-size: 1em;
     color: black;
     padding: 2rem;
     text-wrap: pretty;
@@ -16,20 +16,21 @@ body {
 }
 
 p {
-    line-height: 2;
-    letter-spacing: 0.1 em;
-    margin-bottom: 3%;
+    line-height: 2rem;
+    padding-bottom: 1rem;
     padding-left: 6.5rem;
 }
 
 section {
 
     h2 {
+        /* got help with google cause it would not go all the way to the top and you could see paragraphs behind at the top as you scrolled */
         position: sticky;
-        inline-size: 100%;
-	    inset-block-start: 3rem;
-	    inset-inline-start: 3rem;
-        z-index: 1;
+        top: 0;
+        background: white; 
+        font-size: 5rem;
+        z-index: 10;
+        padding-top: 3rem; 
     }
 
     h3 {
@@ -49,7 +50,7 @@ h1 {
     font-size: 7rem;
     font-weight: bold;
     letter-spacing: 0cap;
-    padding-bottom: 13rem; /* padding from title */
+    padding-bottom: 10rem; /* padding from title */
     text-box: trim-both cap alphabetic;
 }
 
@@ -57,7 +58,7 @@ h2 {
     font-family: monospace;
     font-weight: bold;
     color: black;
-    font-size: 5rem;
+    font-size: 7rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-box: trim-both cap alphabetic;
@@ -155,7 +156,7 @@ li {
 }
 
 section {
-    margin-bottom: 20rem;
+    margin-bottom: 2rem;
     background-color: white;
 
 }
@@ -279,7 +280,6 @@ code {
 footer {
 }
 
-
 .cursor { /* crediting Michael French for this code and bringing this cursor idea to life */
     animation: blink .85s step-start infinite;
     font-weight: normal;
@@ -290,6 +290,12 @@ footer {
     50% { 
         opacity: 0;
  }
+}
+
+/* Found online with Google's AI search result - no idea if it's working   */
+.new-page-section {
+    padding-top: 20rem; /* added this myself */
+    page-break-before: always;
 }
 
 a:hover { color: #FB4E4E; }
