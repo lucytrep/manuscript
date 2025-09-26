@@ -1,22 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Neonderthaw&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Neonderthaw&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+html {
+    font-size: 125%;
+}
 
 body { 
     font-family: cousine;
     font-size: 1.1rem;
     color: black;
-    padding: 3rem;
+    padding: 2rem;
     text-wrap: pretty;
-    margin: auto;
+    margin: 2rem;
     max-inline-size: 90ch;
 }
 
 p {
-    text-align: center;
     line-height: 2;
     letter-spacing: 0.1 em;
     margin-bottom: 3%;
+}
+
+section {
+
+    h2 {
+        position: sticky;
+        inline-size: 100%;
+	    inset-block-start: 3rem;
+	    inset-inline-start: 3rem;
+        z-index: 1;
+    }
+
+    .em {
+        inline-size: 100%;
+        padding-bottom: 1rem;
+        padding-top: 2rem;
+	    inset-block-start: 6rem;
+        position: sticky;
+    }
+
 }
 
 h1 {
@@ -25,10 +47,7 @@ h1 {
     font-size: 9rem;
     letter-spacing: 0.0 em;
     line-height: 80%;
-    padding-left: 0;
-    padding-right: 0;
     background-color:#95D3E0;
-    text-align: center;
     text-box: trim-both cap alphabetic;
 }
 
@@ -39,7 +58,6 @@ h2 {
     margin-top: 1rem;
     margin-bottom: 1rem;
     background-color:#FCCBCF;
-    text-align: center;
     text-box: trim-both cap alphabetic;
 }
 
@@ -47,26 +65,30 @@ h3 {
     font-family: cousine;
     color: black;
     font-size: 1.9rem;
-    text-align: center;
-    padding-top: 3rem;
     padding-bottom: 1rem;
     text-wrap: pretty;
+    background-color: white;
+    margin-top: 5rem;
+    padding-top: 1rem;
 }
 
 h3.em {
     font-size: 1.6rem;
+    background-color: white;
 }
 
 h3.em::before {
     content: "<em>";
     color: #95D3E0;
     opacity: 50%;
+    background-color: white;
 }
 
 h3.em::after {
     content: "</em>";
     color: #95D3E0;
     opacity: 50%;
+    background-color: white;
 }
 
 h4 {
@@ -74,7 +96,6 @@ h4 {
     background-color:#95D3E0;
     color: black;
     font-size: 1.7rem;
-    text-align: center;
     margin-top: 2rem;
     margin-bottom: 1.5rem;
     text-box: trim-both cap alphabetic;
@@ -83,10 +104,8 @@ h4 {
 
 blockquote {
     font-family: cousine;
-    text-align: center;
     line-height: 1.5;
     font-style: italic;
-    max-width: 700px;
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -112,7 +131,6 @@ code {
     color: #95D3E0;
     opacity: 50%;
     display: block;
-    text-align: center;
     margin-bottom: 2rem;
 }
 
@@ -153,7 +171,6 @@ code {
 
 .green-background {
     background-color: #A6E8C6;
-    text-align: center;
     font-size: 6rem;
     margin-top: 5rem;
 }
@@ -167,6 +184,5 @@ code {
 }
 
 footer {
-    text-align: center;
 }
 /*:not(:first-child) { margin-block-start: 1em; }
