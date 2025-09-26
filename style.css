@@ -7,8 +7,8 @@ html {
 }
 
 body { 
-    font-family: cousine;
-    font-size: 1em;
+    font-family: monospace;
+    font-size: 1rem;
     color: black;
     padding: 2rem;
     text-wrap: pretty;
@@ -29,15 +29,16 @@ section {
         top: 0;
         background: white; 
         font-size: 5rem;
-        z-index: 10;
+        z-index: 1;
         padding-top: 3rem; 
+        padding-bottom: 1rem;
     }
 
     h3 {
         inline-size: 100%;
         padding-bottom: 1rem;
-        padding-top: 2rem;
-	    inset-block-start: 6rem;
+        padding-top: 1rem;
+	    inset-block-start: 7rem;
         position: sticky;
         background-color: white;
     }
@@ -100,6 +101,26 @@ h3.em::before {
 }
 
 h3.em::after {
+    content: "</em>";
+    color: #7ab839;
+    background-color: white;
+}
+
+.em-smaller {
+    font-family: cousine;
+    color: black;
+    font-size: 1.5rem;
+    text-wrap: pretty;
+    padding-left: .5rem;
+}
+
+h3.em-smaller::before {
+    content: "<em>";
+    color: #7ab839;
+    background-color: white;
+}
+
+h3.em-smaller::after {
     content: "</em>";
     color: #7ab839;
     background-color: white;
@@ -222,10 +243,10 @@ em {
 
 code {
     font-family: monospace;
-    color: #95D3E0;
-    opacity: 50%;
+    color: #00BDFF;
     display: block;
-    margin-bottom: 2rem;
+    padding-left: 6.5rem;
+    padding-bottom: 1rem;
 }
 
 .basic {
