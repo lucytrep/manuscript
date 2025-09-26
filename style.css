@@ -41,27 +41,35 @@ section {
 
 }
 
+section {
+    h3 {
+        padding-left: 2rem;
+    }
+}
+
 h1 {
     font-family: monospace;
     color: #FB4E4E;
-    font-size: 6rem;
+    font-size: 7rem;
     font-weight: bold;
     letter-spacing: 0cap;
-    padding-bottom: 15rem; /* padding from title */
+    padding-bottom: 13rem; /* padding from title */
     text-box: trim-both cap alphabetic;
 }
 
 h2 {
-    font-family: cousine;
+    font-family: monospace;
+    font-weight: bold;
     color: black;
-    font-size: 3rem;
-    padding-left: 3rem;
+    font-size: 5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-box: trim-both cap alphabetic;
+    background-color: white;
+    padding-bottom: 1rem;
 }
 
-h2.em {
+/* h2.em {
     color: black;
     font-size: 4rem;
 }
@@ -78,14 +86,13 @@ h2.em::after {
     color: #FCCBCF;
     opacity: 50%;
     background-color: white;
-}
+} */
 
 h3 {
     font-family: cousine;
     color: black;
     font-size: 2rem;
     text-wrap: pretty;
-    background-color: white;
 }
 
 h3.em {
@@ -118,7 +125,7 @@ h4 {
     text-wrap: pretty;
 }
 
-h3.ul {
+/* h3.ul {
     font-size: 2rem;
 }
 
@@ -130,33 +137,71 @@ h3.ul::before {
 h3.ul::after {
     content: "</ul>";
     color: #00BDFF;
-}
+} */
 
 ul {
-    font-size: 1.5rem;
-    padding-left: 3rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-left: 1rem;
     padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
 }
 
-ul.li::before {
+li.li::before {
     content: "<li>";
     color: #00BDFF;
 }
 
-ul.li::after {
+li.li::after {
     content: "</li>";
     color: #00BDFF;
 }
 
 li {
-    padding-left: 6.2rem;
+    padding-left: 3rem;
+    font-size: 1.25rem;
     line-height: 2.5cap;
     list-style-type: none;
 }
 
 section {
     margin-bottom: 12rem;
+    background-color: white;
+
+}
+
+time {
+    color: black;
+}
+
+.date {
+    color: #00BDFF;
+    font-size: 1rem;
+    padding-left: 1rem
+}
+
+.date::before {
+    content: "<date>";
+}
+
+.date::after {
+    content: "</date>";
+}
+
+.author {
+    color: black;
+    font-size: 1rem;
+    padding-left: 2rem
+}
+
+.author::before {
+    content: "<author>";
+    color: #00BDFF;
+}
+
+.author:after {
+    content: "</author>";
+    color: #00BDFF;
 }
 
 blockquote {
@@ -173,14 +218,6 @@ blockquote {
 em {
     font-weight: bold;
     font-style: italic;
-}
-
-.author {
-    margin-bottom: 40px;
-}
-
-.right-align {
-    float: right;
 }
 
 code {
