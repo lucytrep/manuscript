@@ -3,6 +3,7 @@
 
 html {
     font-size: 125%;
+    margin: 1rem;
 }
 
 body { 
@@ -11,8 +12,7 @@ body {
     color: black;
     padding: 2rem;
     text-wrap: pretty;
-    margin: 2rem;
-    max-inline-size: 90ch;
+    max-inline-size: 100ch;
 }
 
 p {
@@ -42,34 +42,50 @@ section {
 }
 
 h1 {
-    font-family: cousine;
-    color: black;
-    font-size: 9rem;
-    letter-spacing: 0.0 em;
-    line-height: 80%;
-    background-color:#95D3E0;
+    font-family: monospace;
+    color: #FB4E4E;
+    font-size: 6rem;
+    font-weight: bold;
+    letter-spacing: 0cap;
+    padding-bottom: 15rem; /* padding from title */
     text-box: trim-both cap alphabetic;
 }
 
 h2 {
     font-family: cousine;
     color: black;
-    font-size: 6rem;
+    font-size: 3rem;
+    padding-left: 3rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    background-color:#FCCBCF;
     text-box: trim-both cap alphabetic;
+}
+
+h2.em {
+    color: black;
+    font-size: 4rem;
+}
+
+h2.em::before {
+    content: "<h2>";
+    color: #FCCBCF;
+    opacity: 50%;
+    background-color: white;
+}
+
+h2.em::after {
+    content: "</h2>";
+    color: #FCCBCF;
+    opacity: 50%;
+    background-color: white;
 }
 
 h3 {
     font-family: cousine;
     color: black;
-    font-size: 1.9rem;
-    padding-bottom: 1rem;
+    font-size: 2rem;
     text-wrap: pretty;
     background-color: white;
-    margin-top: 5rem;
-    padding-top: 1rem;
 }
 
 h3.em {
@@ -100,6 +116,47 @@ h4 {
     margin-bottom: 1.5rem;
     text-box: trim-both cap alphabetic;
     text-wrap: pretty;
+}
+
+h3.ul {
+    font-size: 2rem;
+}
+
+h3.ul::before {
+    content: "<ul>";
+    color: #00BDFF;
+}
+
+h3.ul::after {
+    content: "</ul>";
+    color: #00BDFF;
+}
+
+ul {
+    font-size: 1.5rem;
+    padding-left: 3rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+ul.li::before {
+    content: "<li>";
+    color: #00BDFF;
+}
+
+ul.li::after {
+    content: "</li>";
+    color: #00BDFF;
+}
+
+li {
+    padding-left: 6.2rem;
+    line-height: 2.5cap;
+    list-style-type: none;
+}
+
+section {
+    margin-bottom: 12rem;
 }
 
 blockquote {
@@ -185,4 +242,20 @@ code {
 
 footer {
 }
+
+
+.cursor { /* crediting Michael French for this code and bringing this cursor idea to life */
+    animation: blink .85s step-start infinite;
+    font-weight: normal;
+    color: black;
+}
+
+@keyframes blink { /* crediting Michael French for this code and bringing this cursor idea to life */
+    50% { 
+        opacity: 0;
+ }
+}
+
+a:hover { color: #FB4E4E; }
+
 /*:not(:first-child) { margin-block-start: 1em; }
