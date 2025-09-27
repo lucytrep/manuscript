@@ -95,13 +95,13 @@ h3 {
 }
 
 h3.em::before {
-    content: "<em>";
+    content: "<h2>";
     color: #7ab839;
     background-color: white;
 }
 
 h3.em::after {
-    content: "</em>";
+    content: "</h2>";
     color: #7ab839;
     background-color: white;
 }
@@ -115,13 +115,13 @@ h3.em::after {
 }
 
 h3.em-smaller::before {
-    content: "<em>";
+    content: "<h2>";
     color: #7ab839;
     background-color: white;
 }
 
 h3.em-smaller::after {
-    content: "</em>";
+    content: "</h2>";
     color: #7ab839;
     background-color: white;
 }
