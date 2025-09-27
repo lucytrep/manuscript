@@ -87,7 +87,7 @@ h2.em::after {
 } */
 
 h3 {
-    font-family: cousine;
+    font-family: monospace;
     color: black;
     font-size: 2rem;
     text-wrap: pretty;
@@ -107,7 +107,7 @@ h3.em::after {
 }
 
 .em-smaller {
-    font-family: cousine;
+    font-family: monospace;
     color: black;
     font-size: 1.5rem;
     text-wrap: pretty;
@@ -127,7 +127,7 @@ h3.em-smaller::after {
 }
 
 h4 {
-    font-family: cousine;
+    font-family: monospace;
     background-color:#95D3E0;
     color: black;
     font-size: 1.7rem;
@@ -226,14 +226,10 @@ time {
 
 
 blockquote {
-    font-family: cousine;
-    line-height: 1.5;
-    font-style: italic;
-    margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #FFDAC8;
+    font-family: monospace;
     text-wrap: pretty;
+    padding-left: 1rem;
+    font-style: italic;
 }
 
 em {
@@ -245,7 +241,7 @@ code {
     font-family: monospace;
     color: #00BDFF;
     display: block;
-    padding-left: 6.5rem;
+    padding-left: 8rem;
     padding-bottom: 1rem;
 }
 
@@ -272,8 +268,8 @@ code {
 .orange-text {
     color: #DE8152;
     font-weight: bold;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    padding-left: 3rem;
+    padding-bottom: 1rem;
 }
 
 .green-text {
@@ -282,6 +278,28 @@ code {
     margin: 1rem;
     line-height: 20px;
     font-size: 1rem;
+}
+
+.block {
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    background-color: black;
+    margin: 7rem;
+    margin-top: 1rem;
+    margin-left: 8rem;
+    margin-bottom: 3rem;
+}
+
+.blockquote {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.quote {
+    color: white;
+    font-style: italic;
+    padding-right: 2rem;
+    padding-left: 5rem;
 }
 
 .green-background {
