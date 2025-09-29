@@ -17,8 +17,8 @@ body {
 
 p {
     line-height: 2rem;
-    padding-bottom: 1rem;
-    padding-left: 6.5rem;
+    padding-block-end: 1.5rem;
+    padding-inline-start: 6.5rem;
 }
 
 section {
@@ -30,14 +30,14 @@ section {
         background: white; 
         font-size: 5rem;
         z-index: 1;
-        padding-top: 3rem; 
-        padding-bottom: 1rem;
+        padding-block-start: 3rem; 
+        padding-block-end: 1rem;
     }
 
     h3 {
         inline-size: 100%;
-        padding-bottom: 1rem;
-        padding-top: 1rem;
+        padding-block-end: 1rem;
+        padding-block-start: 1rem;
 	    inset-block-start: 7rem;
         position: sticky;
         background-color: white;
@@ -48,11 +48,15 @@ section {
 h1 {
     font-family: monospace;
     color: #FB4E4E;
-    font-size: 7rem;
+    font-size: 5rem;
     font-weight: bold;
     letter-spacing: 0cap;
-    padding-bottom: 10rem; /* padding from title */
+    background-color: #000000;
+    padding-block-start: 2rem; 
+    padding-block-end: 3rem;
+    padding-inline-start: 2rem;
     text-box: trim-both cap alphabetic;
+    border-radius: 1rem;
 }
 
 h2 {
@@ -60,11 +64,11 @@ h2 {
     font-weight: bold;
     color: black;
     font-size: 7rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    padding-block-end: 1rem;
+    margin-block-start: 5rem;
+    margin-block-end: 1rem;
     text-box: trim-both cap alphabetic;
     background-color: white;
-    padding-bottom: 1rem;
 }
 
 /* h2.em {
@@ -91,7 +95,7 @@ h3 {
     color: black;
     font-size: 2rem;
     text-wrap: pretty;
-    padding-left: .5rem;
+    padding-inline-start: .5rem;
 }
 
 h3.em::before {
@@ -111,7 +115,7 @@ h3.em::after {
     color: black;
     font-size: 1.5rem;
     text-wrap: pretty;
-    padding-left: .5rem;
+    padding-inline-start: .5rem;
 }
 
 h3.em-smaller::before {
@@ -128,13 +132,25 @@ h3.em-smaller::after {
 
 h4 {
     font-family: monospace;
-    background-color:#95D3E0;
     color: black;
-    font-size: 1.7rem;
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
-    text-box: trim-both cap alphabetic;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-block-start: 2rem;
+    margin-block-end: 1.5rem;
+    margin-inline-start: .5rem;
     text-wrap: pretty;
+}
+
+h4::before {
+    content: "<h3>";
+    color: #DE8152;
+    font-weight: normal;
+}
+
+h4::after {
+    content: "</h3>";
+    color: #DE8152;
+    font-weight: normal;
 }
 
 /* h3.ul {
@@ -152,11 +168,11 @@ h3.ul::after {
 } */
 
 ul {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
-    padding-left: 1rem;
-    padding-bottom: 0.5rem;
-    padding-top: 1rem;
+    padding-inline-start: 1rem;
+    padding-block-end: 0.5rem;
+    padding-block-start: 1rem;
 }
 
 li.li::before {
@@ -170,16 +186,32 @@ li.li::after {
 }
 
 li {
-    padding-left: 3rem;
-    font-size: 1.25rem;
+    padding-inline-start: 3rem;
+    font-size: 1rem;
     line-height: 2.5cap;
     list-style-type: none;
 }
 
 section {
-    margin-bottom: 2rem;
+    margin-block-end: 2rem;
     background-color: white;
 
+}
+
+.link {
+    color: black;
+    font-size: 1rem;
+    padding-inline-start: 1rem;
+}
+
+.link::before {
+    content: "<a href=";
+    color: #00BDFF;
+}
+
+.link::after {
+    content: ">";
+    color: #00BDFF;
 }
 
 time {
@@ -189,7 +221,7 @@ time {
 .date {
     color: #00BDFF;
     font-size: 1rem;
-    padding-left: 1rem
+    padding-inline-start: 2rem;
 }
 
 .date::before {
@@ -203,8 +235,8 @@ time {
 .author {
     color: black;
     font-size: 1rem;
-    padding-left: 2rem;
-    padding-bottom: 3rem;
+    padding-inline-start: 3rem;
+    padding-block-end: 6rem;
 }
 
 .author::before {
@@ -220,15 +252,31 @@ time {
 .sub-header-section {
     color: black;
     font-size: 1rem;
-    padding-left: 2rem;
-    padding-bottom: 3rem;
+    padding-inline-start: 2rem;
+    padding-block-end: 3rem;
 }
 
+.class {
+    color: #000000;
+    font-size: 1rem;
+    padding-inline-start: 2rem;
+    margin-block-start: 1rem; 
+}
+
+.class::before {
+    content: "<class=";
+    color: #00BDFF;
+}
+
+.class:after {
+    content: ">";
+    color: #00BDFF;
+}
 
 blockquote {
     font-family: monospace;
     text-wrap: pretty;
-    padding-left: 1rem;
+    padding-inline-start: 1rem;
     font-style: italic;
 }
 
@@ -241,8 +289,8 @@ code {
     font-family: monospace;
     color: #00BDFF;
     display: block;
-    padding-left: 8rem;
-    padding-bottom: 1rem;
+    padding-inline-start: 8rem;
+    padding-block-end: 1.5rem;
 }
 
 .basic {
@@ -268,8 +316,8 @@ code {
 .orange-text {
     color: #DE8152;
     font-weight: bold;
-    padding-left: 3rem;
-    padding-bottom: 1rem;
+    padding-inline-start: 3rem;
+    padding-block-end: 1rem;
 }
 
 .green-text {
@@ -281,35 +329,37 @@ code {
 }
 
 .block {
-    padding-top: 1rem;
-    padding-bottom: .5rem;
+    padding-block-start: 1.5rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 3rem;
+    margin-inline-start: 10rem;
     background-color: black;
-    margin: 7rem;
-    margin-top: 1rem;
-    margin-left: 8rem;
-    margin-bottom: 3rem;
+    border-radius: 1rem;
 }
 
 .blockquote {
-    padding-left: 1rem;
-    padding-bottom: 1rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
 }
 
 .quote {
     color: white;
     font-style: italic;
-    padding-right: 2rem;
-    padding-left: 5rem;
+    padding-inline-start: 4rem;
+    padding-inline-end: 1rem;
 }
 
-.green-background {
-    background-color: #A6E8C6;
-    font-size: 6rem;
-    margin-top: 5rem;
+.person {
+   color: #DE8152;
+   padding-inline-start: 6.5rem;
+   padding-block-end: 2.5rem;
+   block-size: 1.5rem;
+   font-weight: bold;
+   font-size: 1.5rem;
 }
 
 .upper-space {
-    margin-top: 5rem;
+    margin-block-start: 5rem;
 }
 
 .pink {
@@ -322,7 +372,7 @@ footer {
 .cursor { /* crediting Michael French for this code and bringing this cursor idea to life */
     animation: blink .85s step-start infinite;
     font-weight: normal;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 @keyframes blink { /* crediting Michael French for this code and bringing this cursor idea to life */
@@ -337,6 +387,7 @@ footer {
     page-break-before: always;
 }
 
-a:hover { color: #FB4E4E; }
-
+a:hover { 
+    color:#FB4E4E; 
+}
 /*:not(:first-child) { margin-block-start: 1em; }
