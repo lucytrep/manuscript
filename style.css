@@ -133,7 +133,8 @@ h4 {
     font-family: monospace;
     color: black;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    padding-inline-start: 1.25rem;
     margin-block-start: 2rem;
     margin-block-end: 1.5rem;
     margin-inline-start: .5rem;
@@ -257,7 +258,7 @@ time {
 .class {
     color: #000000;
     font-size: 1rem;
-    padding-inline-start: 2rem;
+    padding-inline-start: 3rem;
     margin-block-start: 1rem; 
 }
 
@@ -353,7 +354,7 @@ code {
    padding-block-end: 2.5rem;
    block-size: 1.5rem;
    font-weight: bold;
-   font-size: 1.5rem;
+   font-size: 1.25rem;
 }
 
 .upper-space {
