@@ -8,6 +8,7 @@ html {
 
 body { 
     font-family: monospace;
+    margin-inline: auto;
     font-size: 1rem;
     color: black;
     padding: 2rem;
@@ -65,8 +66,6 @@ h2 {
     color: black;
     font-size: 7rem;
     padding-block-end: 1rem;
-    margin-block-start: 5rem;
-    margin-block-end: 1rem;
     text-box: trim-both cap alphabetic;
     background-color: white;
 }
@@ -172,7 +171,7 @@ ul {
     font-weight: bold;
     padding-inline-start: 1rem;
     padding-block-end: 0.5rem;
-    padding-block-start: 1rem;
+    padding-block-start: 2rem;
 }
 
 li.li::before {
@@ -195,7 +194,6 @@ li {
 section {
     margin-block-end: 2rem;
     background-color: white;
-
 }
 
 .link {
@@ -236,7 +234,7 @@ time {
     color: black;
     font-size: 1rem;
     padding-inline-start: 3rem;
-    padding-block-end: 6rem;
+    padding-block-end: 3rem;
 }
 
 .author::before {
@@ -367,6 +365,13 @@ code {
 }
 
 footer {
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    padding-block-end: 1rem;
+    padding-block-start: 1rem;
+    color:white;
+    background-color: black;
+    border-radius: 1rem;
 }
 
 .cursor { /* crediting Michael French for this code and bringing this cursor idea to life */
@@ -379,12 +384,6 @@ footer {
     50% { 
         opacity: 0;
  }
-}
-
-/* Found online with Google's AI search result - no idea if it's working   */
-.new-page-section {
-    padding-top: 20rem; /* added this myself */
-    page-break-before: always;
 }
 
 a:hover { 
