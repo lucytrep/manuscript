@@ -29,9 +29,9 @@ section {
         position: sticky;
         top: 0;
         background: white; 
-        font-size: 5rem;
+        font-size: 4rem;
         z-index: 1;
-        padding-block-start: 3rem; 
+        padding-block-start: 2rem; 
         padding-block-end: 1rem;
     }
 
@@ -39,11 +39,19 @@ section {
         inline-size: 100%;
         padding-block-end: 1rem;
         padding-block-start: 1rem;
-	    inset-block-start: 7rem;
+	    inset-block-start: 5rem;
         position: sticky;
         background-color: white;
     }
 
+}
+
+.toc {
+    margin-block-end: 5rem;
+}
+
+.space {
+    margin-block-start: 5rem;
 }
 
 h1 {
@@ -64,7 +72,7 @@ h2 {
     font-family: monospace;
     font-weight: bold;
     color: black;
-    font-size: 7rem;
+    font-size: 5rem;
     padding-block-end: 1rem;
     text-box: trim-both cap alphabetic;
     background-color: white;
