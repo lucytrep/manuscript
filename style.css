@@ -47,7 +47,7 @@ section {
 }
 
 .toc {
-    margin-block-end: 5rem;
+    margin-block-end: 5rem; /* space from article */
 }
 
 .space {
@@ -62,7 +62,7 @@ h1 {
     letter-spacing: 0cap;
     background-color: #000000;
     padding-block-start: 2rem; 
-    padding-block-end: 3rem;
+    padding-block-end: 2.25rem;
     padding-inline-start: 2rem;
     text-box: trim-both cap alphabetic;
     border-radius: 1rem;
@@ -120,19 +120,21 @@ h3.em::after {
 .em-smaller {
     font-family: monospace;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.65rem;
     text-wrap: pretty;
     padding-inline-start: .5rem;
 }
 
 h3.em-smaller::before {
     content: "<h2>";
+    font-size: 2rem;
     color: #7ab839;
     background-color: white;
 }
 
 h3.em-smaller::after {
     content: "</h2>";
+    font-size: 2rem;
     color: #7ab839;
     background-color: white;
 }
@@ -178,9 +180,15 @@ h3.ul::after {
 ul {
     font-size: 2rem;
     font-weight: bold;
-    padding-inline-start: 1rem;
     padding-block-end: 0.5rem;
-    padding-block-start: 2rem;
+    padding-block-start: 1rem;
+}
+
+.sub-list {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 2.5cap;
+    list-style-type: none;
 }
 
 li.li::before {
@@ -217,7 +225,7 @@ section {
 }
 
 .link::after {
-    content: ">";
+    content: "></a>";
     color: #00BDFF;
 }
 
@@ -243,7 +251,7 @@ time {
     color: black;
     font-size: 1rem;
     padding-inline-start: 3rem;
-    padding-block-end: 3rem;
+    padding-block-end: 5rem;
 }
 
 .author::before {
@@ -266,17 +274,17 @@ time {
 .class {
     color: #000000;
     font-size: 1rem;
-    padding-inline-start: 3rem;
+    padding-inline-start: 1rem;
     margin-block-start: 1rem; 
 }
 
 .class::before {
-    content: "<class=";
+    content: "<mps class=";
     color: #00BDFF;
 }
 
 .class:after {
-    content: ">";
+    content: "></mps>";
     color: #00BDFF;
 }
 
@@ -298,6 +306,12 @@ code {
     display: block;
     padding-inline-start: 8rem;
     padding-block-end: 1.5rem;
+}
+
+.normal {
+    font-size: 2rem;
+    font-weight: lighter;
+    color: #FB4E4E;
 }
 
 .basic {
@@ -373,6 +387,12 @@ code {
     color: #DE8152;
 }
 
+.italic {
+    font-weight: bold;
+    font-style: italic;
+    color: #FB4E4E;
+}
+
 footer {
     padding-inline-start: 1rem;
     padding-inline-end: 1rem;
@@ -398,4 +418,11 @@ footer {
 a:hover { 
     color:#FB4E4E; 
 }
+
+/* only sub-list links hover pink */
+.sub-list a:hover {
+  color: #fc9696;
+}
+
+
 /*:not(:first-child) { margin-block-start: 1em; }
