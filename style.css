@@ -7,7 +7,7 @@ html {
 }
 
 body { 
-    font-family: Overpass Mono;
+    font-family: 'Overpass Mono', 'Courier New', Courier, monospace;
     margin-inline: auto;
     font-size: 1rem;
     color: black;
@@ -35,21 +35,23 @@ p {
         padding-block-start: 1rem;
 	    inset-block-start: 5rem;
         position: sticky;
-        background: white;
         padding-inline-end: 5rem;
+        background: linear-gradient(to top,#FFFFFF00 0%, #FFFFFFE6 30%, #FFFFFFFF 70%);
+      
     }
 
     h2 {
         position: sticky;
         top: 0;
-        background: white; 
         color: black;
         font-size: 4rem;
         z-index: 1;
         padding-block-start: 2rem; 
         padding-block-end: 1rem;
         padding-inline-end: 5rem;
+        background-color: white;
     }
+
 
 }
 
@@ -72,7 +74,8 @@ p {
 	    inset-block-start: 5rem;
         position: sticky;
         color: black;
-        background-color: #ffe4e4;
+        background: linear-gradient(to top,#ffe4e400 0%, #ffe4e4cc 30%, #ffe4e4ff 70%);
+
     }
 
     h5 {
@@ -99,7 +102,7 @@ p {
 }
 
 h1 {
-    font-family: Overpass Mono;
+    font-family: 'Overpass Mono', 'Courier New', Courier, monospace;
     color: #FB4E4E;
     font-size: 5rem;
     font-weight: bold;
@@ -113,7 +116,7 @@ h1 {
 }
 
 h2 {
-    font-family: Overpass Mono;
+    font-family: 'Overpass Mono', 'Courier New', Courier, monospace;
     font-weight: bold;
     color: black;
     font-size: 5rem;
@@ -143,9 +146,8 @@ h2.em::after {
 
 
 h3 {
-    font-family: Overpass Mono;
+    font-family: 'Overpass Mono', 'Courier New', Courier, monospace;
     color: black;
-    background-color: white;
     font-size: 2rem;
     text-wrap: pretty;
     padding-inline-start: .5rem;
@@ -154,17 +156,15 @@ h3 {
 h3.em::before {
     content: "<h2>";
     color: #7ab839;
-    background-color: white;
 }
 
 h3.em::after {
     content: "</h2>";
     color: #7ab839;
-    background-color: white;
 }
 
 .em-smaller {
-    font-family: Overpass Mono;
+    font-family: 'Overpass Mono', 'Courier New', Courier, monospace;
     color: black;
     font-size: 1.5rem;
     text-wrap: pretty;
@@ -175,18 +175,16 @@ h3.em-smaller::before {
     content: "<h2>";
     font-size: 2rem;
     color: #7ab839;
-    background-color: white;
 }
 
 h3.em-smaller::after {
     content: "</h2>";
     font-size: 2rem;
     color: #7ab839;
-    background-color: white;
 }
 
 h4 {
-    font-family: Overpass Mono;
+    font-family: 'Overpass Mono', 'Courier New', Courier, monospace;
     color: black;
     font-weight: bold;
     font-size: 1.5rem;
@@ -210,7 +208,7 @@ h4::after {
 }
 
 h5 {
-    font-family: Overpass Mono;
+    font-family: 'Overpass Mono', 'Courier New', Courier, monospace;
     font-weight: bold;
     color: white;
     font-size: 5rem;
@@ -220,7 +218,7 @@ h5 {
 }
 
 h6 {
-    font-family: Overpass Mono;
+    font-family: 'Overpass Mono', 'Courier New', Courier, monospace;
     color: white;
     background-color: black;
     font-size: 2rem;
@@ -416,7 +414,7 @@ time {
 }
 
 blockquote {
-    font-family: Overpass Mono;
+    font-family: 'Overpass Mono', 'Courier New', Courier, monospace;
     text-wrap: pretty;
     padding-inline-start: 1rem;
     font-style: italic;
@@ -428,7 +426,7 @@ em {
 }
 
 code {
-    font-family: Overpass Mono;
+    font-family: 'Overpass Mono', 'Courier New', Courier, monospace;
     color: #00BDFF;
     display: block;
     padding-inline-start: 8rem;
@@ -442,18 +440,8 @@ code {
 }
 
 .basic {
-    font-family: Overpass Mono;
+    font-family: 'Overpass Mono', 'Courier New', Courier, monospace;
     color: black;
-}
-
-.special-font {
-    font-family: neonderthaw;
-}
-
-.wild-font {
-    color: black;
-    font-family: neonderthaw;
-    letter-spacing: 1rem;
 }
 
 .bigfont { 
