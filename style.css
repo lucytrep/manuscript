@@ -35,7 +35,6 @@ p {
         padding-block-start: 1rem;
 	    inset-block-start: 5rem;
         position: sticky;
-        z-index: 1;
         background: white;
         padding-inline-end: 5rem;
     }
