@@ -359,7 +359,7 @@ time {
     color: black;
     font-size: 1rem;
     padding-inline-start: 3rem;
-    padding-block-end: 5rem;
+    padding-block-end: 3.5rem;
 }
 
 .author::before {
