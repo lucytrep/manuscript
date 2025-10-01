@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Neonderthaw&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Neonderthaw&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Code:wght@300..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Neonderthaw&family=Overpass+Mono:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sono:wght@200..800&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
 
 html {
     font-size: 125%;
     margin: 1rem;
+
 }
 
 body { 
-    font-family: monospace;
+    font-family: Overpass Mono;
     margin-inline: auto;
     font-size: 1rem;
     color: black;
@@ -18,22 +18,16 @@ body {
 
 p {
     line-height: 2rem;
-    padding-block-end: 1.5rem;
+    padding-block-end: 2rem;
     padding-inline-start: 6.5rem;
+    padding-block-end: 3rem;
 }
 
-section {
+.first-child {
+    padding-block-start: 1.75rem;
+}
 
-    h2 {
-        /* got help with google cause it would not go all the way to the top and you could see paragraphs behind at the top as you scrolled */
-        position: sticky;
-        top: 0;
-        background: white; 
-        font-size: 4rem;
-        z-index: 1;
-        padding-block-start: 2rem; 
-        padding-block-end: 1rem;
-    }
+.article {
 
     h3 {
         inline-size: 100%;
@@ -41,7 +35,58 @@ section {
         padding-block-start: 1rem;
 	    inset-block-start: 5rem;
         position: sticky;
-        background-color: white;
+        z-index: 1;
+        background: white;
+        padding-inline-end: 5rem;
+    }
+
+    h2 {
+        position: sticky;
+        top: 0;
+        background: white; 
+        color: black;
+        font-size: 4rem;
+        z-index: 1;
+        padding-block-start: 2rem; 
+        padding-block-end: 1rem;
+        padding-inline-end: 5rem;
+    }
+
+}
+
+.reflection {
+    background-color: #ffe4e4;
+    border-radius: 1rem;
+    color: black;
+    padding-inline-end: 1rem;
+    margin-inline-end: 2rem;
+    text-wrap: pretty;
+    padding-inline-start: 2rem
+}
+
+.reflection {
+
+   h6 {
+        inline-size: 100%;
+        padding-block-end: 1rem;
+        padding-block-start: 1rem;
+	    inset-block-start: 5rem;
+        position: sticky;
+        color: black;
+        background-color: #ffe4e4;
+    }
+
+    h5 {
+        position: sticky;
+        top: 0;
+        background-color: #ffe4e4; 
+        color: black;
+        font-size: 4rem;
+        z-index: 1;
+        padding-block-start: 2rem; 
+        padding-block-end: 1rem;
+        padding-inline-start: 2rem;
+        border-radius: 1rem;
     }
 
 }
@@ -55,7 +100,7 @@ section {
 }
 
 h1 {
-    font-family: monospace;
+    font-family: Overpass Mono;
     color: #FB4E4E;
     font-size: 5rem;
     font-weight: bold;
@@ -69,7 +114,7 @@ h1 {
 }
 
 h2 {
-    font-family: monospace;
+    font-family: Overpass Mono;
     font-weight: bold;
     color: black;
     font-size: 5rem;
@@ -97,9 +142,11 @@ h2.em::after {
     background-color: white;
 } */
 
+
 h3 {
-    font-family: monospace;
+    font-family: Overpass Mono;
     color: black;
+    background-color: white;
     font-size: 2rem;
     text-wrap: pretty;
     padding-inline-start: .5rem;
@@ -118,9 +165,9 @@ h3.em::after {
 }
 
 .em-smaller {
-    font-family: monospace;
+    font-family: Overpass Mono;
     color: black;
-    font-size: 1.65rem;
+    font-size: 1.5rem;
     text-wrap: pretty;
     padding-inline-start: .5rem;
 }
@@ -140,7 +187,7 @@ h3.em-smaller::after {
 }
 
 h4 {
-    font-family: monospace;
+    font-family: Overpass Mono;
     color: black;
     font-weight: bold;
     font-size: 1.5rem;
@@ -161,6 +208,35 @@ h4::after {
     content: "</h3>";
     color: #DE8152;
     font-weight: normal;
+}
+
+h5 {
+    font-family: Overpass Mono;
+    font-weight: bold;
+    color: white;
+    font-size: 5rem;
+    padding-block-end: 1rem;
+    text-box: trim-both cap alphabetic;
+    background-color: white;
+}
+
+h6 {
+    font-family: Overpass Mono;
+    color: white;
+    background-color: black;
+    font-size: 2rem;
+    text-wrap: pretty;
+    margin-inline-start: 0rem;
+}
+
+h6.em::before {
+    content: "<h2>";
+    color: #d400c3;
+}
+
+h6.em::after {
+    content: "</h2>";
+    color: #d400c3;
 }
 
 /* h3.ul {
@@ -213,19 +289,40 @@ section {
     background-color: white;
 }
 
+.tocheader {
+    margin-block-end: 0rem;
+}
+
 .link {
     color: black;
     font-size: 1rem;
-    padding-inline-start: 1rem;
+    margin-inline-start: -2.5rem;
 }
 
 .link::before {
-    content: "<a href=";
+    content: "<article>";
     color: #00BDFF;
 }
 
 .link::after {
-    content: "></a>";
+    content: "</article>";
+    color: #00BDFF;
+}
+
+.link2 {
+    color: black;
+    font-size: 1rem;
+    margin-inline-start: -4rem;
+    padding-block-end: 1rem;
+}
+
+.link2::before {
+    content: "<article>";
+    color: #00BDFF;
+}
+
+.link2::after {
+    content: "</article>";
     color: #00BDFF;
 }
 
@@ -247,6 +344,20 @@ time {
     content: "</date>";
 }
 
+.date2 {
+    color: #0055ff;
+    font-size: 1rem;
+    padding-inline-start: 2rem;
+}
+
+.date2::before {
+    content: "<date>";
+}
+
+.date2::after {
+    content: "</date>";
+}
+
 .author {
     color: black;
     font-size: 1rem;
@@ -264,6 +375,23 @@ time {
     color: #00BDFF;
 }
 
+.author2 {
+    color: black;
+    font-size: 1rem;
+    padding-inline-start: 3rem;
+    padding-block-end: 5rem;
+}
+
+.author2::before {
+    content: "<author>";
+    color: #0055ff;
+}
+
+.author2:after {
+    content: "</author>";
+    color: #0055ff;
+}
+
 .sub-header-section {
     color: black;
     font-size: 1rem;
@@ -279,17 +407,17 @@ time {
 }
 
 .class::before {
-    content: "<mps class=";
+    content: "<code class=";
     color: #00BDFF;
 }
 
 .class:after {
-    content: "></mps>";
+    content: "></class>";
     color: #00BDFF;
 }
 
 blockquote {
-    font-family: monospace;
+    font-family: Overpass Mono;
     text-wrap: pretty;
     padding-inline-start: 1rem;
     font-style: italic;
@@ -301,11 +429,11 @@ em {
 }
 
 code {
-    font-family: monospace;
+    font-family: Overpass Mono;
     color: #00BDFF;
     display: block;
     padding-inline-start: 8rem;
-    padding-block-end: 1.5rem;
+    padding-block-end: 2.5rem;
 }
 
 .normal {
@@ -315,7 +443,7 @@ code {
 }
 
 .basic {
-    font-family: monospace;
+    font-family: Overpass Mono;
     color: black;
 }
 
@@ -334,13 +462,6 @@ code {
     font-size: 2rem;
 }
 
-.orange-text {
-    color: #DE8152;
-    font-weight: bold;
-    padding-inline-start: 3rem;
-    padding-block-end: 1rem;
-}
-
 .green-text {
     color: #53BF87;
     font-weight: bold;
@@ -351,23 +472,70 @@ code {
 
 .block {
     padding-block-start: 1.5rem;
+    padding-block-end: 1.5rem;
     padding-inline-start: 1rem;
-    padding-inline-end: 3rem;
+    padding-inline-end: 1rem;
     margin-inline-start: 10rem;
     background-color: black;
     border-radius: 1rem;
 }
 
 .blockquote {
-    padding-inline-start: 1rem;
-    padding-inline-end: 1rem;
+    padding-block-start: 0.rem;
+    padding-block-end: 0.5rem;
+    margin-inline-start: -7rem;
 }
 
 .quote {
     color: white;
     font-style: italic;
-    padding-inline-start: 4rem;
+    margin-block-start: 0.25rem;
+    margin-block-end: -2rem;
+    margin-inline-start: -1rem;
+    text-wrap: pretty;
     padding-inline-end: 1rem;
+}
+
+.orange-text {
+    color: #DE8152;
+    font-weight: bold;
+    margin-block-start: -0.25rem;
+    margin-block-end: -3rem;
+    margin-inline-start: -3rem;
+}
+
+.bold {
+    margin-block-start: 3rem;
+    padding-block-start: 1.5rem;
+    padding-block-end: 1.5rem;
+    padding-inline-start: 1rem;
+    margin-inline-end: 2rem;
+    margin-inline-start: 10rem;
+    background-color: black;
+    border-radius: 1rem;
+}
+
+.question {
+    padding-block-start: 0.rem;
+    padding-block-end: 0.5rem;
+    margin-inline-start: -7rem;
+}
+
+.bold2 {
+    padding-block-start: 1.5rem;
+    margin-block-end: 3rem;
+    padding-block-end: 1.5rem;
+    padding-inline-start: 1rem;
+    margin-inline-end: 25rem;
+    margin-inline-start: 10rem;
+    background-color: black;
+    border-radius: 1rem;
+}
+
+.question {
+    padding-block-start: 0.rem;
+    padding-block-end: 0.5rem;
+    margin-inline-start: -7rem;
 }
 
 .person {
@@ -384,7 +552,7 @@ code {
 }
 
 .pink {
-    color: #DE8152;
+    color: #FB4E4E;
 }
 
 .italic {
@@ -417,6 +585,14 @@ footer {
 
 a:hover { 
     color:#FB4E4E; 
+}
+
+li.link2 a:hover {
+    color: #d400c3;
+}
+
+li.author a:hover {
+    color: #d400c3;
 }
 
 /* only sub-list links hover pink */
