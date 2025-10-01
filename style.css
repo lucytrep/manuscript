@@ -318,12 +318,12 @@ section {
 
 .link2::before {
     content: "<article>";
-    color: #00BDFF;
+    color: #0055ff;
 }
 
 .link2::after {
     content: "</article>";
-    color: #00BDFF;
+    color: #0055ff;
 }
 
 time {
@@ -532,12 +532,6 @@ code {
     border-radius: 1rem;
 }
 
-.question {
-    padding-block-start: 0.rem;
-    padding-block-end: 0.5rem;
-    margin-inline-start: -7rem;
-}
-
 .person {
    color: #DE8152;
    padding-inline-start: 6.5rem;
@@ -591,8 +585,8 @@ li.link2 a:hover {
     color: #d400c3;
 }
 
-li.author a:hover {
-    color: #d400c3;
+li.author2 a:hover { 
+    color:#d400c3; 
 }
 
 /* only sub-list links hover pink */
