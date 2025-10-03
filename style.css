@@ -508,7 +508,8 @@ code {
 
 footer {
     padding-inline-start: 1rem;
-    padding-inline-end: 1rem;
+    padding-inline-end: 5rem;
+    margin-inline-end: 2rem;
     padding-block-end: 1rem;
     padding-block-start: 1rem;
     color:white;
