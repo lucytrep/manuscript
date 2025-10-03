@@ -6,7 +6,7 @@ Paul Ford’s ideas and themes inspired my design. I wanted to reflect the struc
 
 The goal of my site is to show that code does not have to be overly complex and boring, but approachable and fun. It also encourages users to engage with the material and form their own insights.
 
-**Some tools I used and things I want to remember include:**
+**Some tools I used and things I want to remember include:** 
 - I adjusted spacing using padding and margin with inline and block directions (start and end) to create white space.
 - To display semantic characters around elements, I created CSS classes with ::before and ::after pseudo-elements. This allowed HTML elements to automatically include content like <h2> and </h2> around them.
 - When showcasing code elements in HTML, I used &lt; for < and &gt; for > to prevent the browser from misinterpreting them as actual HTML tags.
