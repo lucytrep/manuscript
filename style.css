@@ -52,7 +52,6 @@ p {
         background-color: white;
     }
 
-
 }
 
 .reflection {
@@ -124,26 +123,6 @@ h2 {
     text-box: trim-both cap alphabetic;
     background-color: white;
 }
-
-/* h2.em {
-    color: black;
-    font-size: 4rem;
-}
-
-h2.em::before {
-    content: "<h2>";
-    color: #FCCBCF;
-    opacity: 50%;
-    background-color: white;
-}
-
-h2.em::after {
-    content: "</h2>";
-    color: #FCCBCF;
-    opacity: 50%;
-    background-color: white;
-} */
-
 
 h3 {
     font-family: 'Overpass Mono', 'Courier New', Courier, monospace;
@@ -235,20 +214,6 @@ h6.em::after {
     content: "</h2>";
     color: #d400c3;
 }
-
-/* h3.ul {
-    font-size: 2rem;
-}
-
-h3.ul::before {
-    content: "<ul>";
-    color: #00BDFF;
-}
-
-h3.ul::after {
-    content: "</ul>";
-    color: #00BDFF;
-} */
 
 ul {
     font-size: 1.5rem;
@@ -579,6 +544,3 @@ li.author2 a:hover {
 .sub-list a:hover {
   color: #fc9696;
 }
-
-
-/*:not(:first-child) { margin-block-start: 1em; }
