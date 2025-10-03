@@ -9,7 +9,7 @@ The goal of my site is to show that code does not have to be overly complex and 
 **Some tools I used and things I want to remember include:** 
 - I adjusted spacing using padding and margin with inline and block directions (start and end) to create white space.
 - To display semantic characters around elements, I created CSS classes with ::before and ::after pseudo-elements. This allowed HTML elements to automatically include content like &lt;h2&gt; and &lt;/h2&gt; around them.
-- When showcasing code elements in HTML, I used &lt; for < and &gt; for > to prevent the browser from misinterpreting them as actual HTML tags.
+- When showcasing code elements in HTML, I used & lt; (no space) for < and & gt; (no space) for > to prevent the browser from misinterpreting them as actual HTML tags.
 - I used position: sticky for certain headings and subheadings to keep them visible while scrolling, emphasizing the relationship between my reading and my reflection.
 - I leveraged &lt;ul&gt; and &lt;li&gt; elements to structure lists for clarity and easier reading.
 - I chose monospace fonts, specifically Overpass Mono, to maintain a coding aesthetic. This font is essential for the website’s effect.
